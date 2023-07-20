@@ -1,0 +1,28 @@
+@import url(styles/header.css);
+@import url(styles/aside.css);
+@import url(styles/main.css);
+@import url(styles/footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root{
+    font-family: 'Montserrat', sans-serif;
+    --cinza-forte: #464646;
+    --cinza-fraco: #A3A3A3;
+    --laranja: #FFB050;
+    --azul: #4894FF
+}
+
+body{
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.div__principal{
+    width: 100%;
+}
+
+button{
+    font-family: 'Montserrat', sans-serif;
+}

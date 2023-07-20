@@ -1,0 +1,48 @@
+aside{
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 0 0 0;
+    display: none;
+    background: #fff;
+    box-shadow: 5px 0px 10px rgba(20, 20, 20, 0.1);
+}
+
+@media screen and (min-width: 1440px) {
+    aside{
+        display: flex;
+        width: 18%;
+        max-width: 15rem;
+    }
+
+    aside a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.25rem;
+        color: var(--cinza-fraco);
+        font-weight: 500;
+        padding: 1.5rem 1.75rem;
+    }
+
+    aside a:hover{
+        background: #f5f5f5;
+    }
+
+    aside a:active{
+        background: #e5eaff;
+    }
+    
+    .aside__a__selecionado{
+        color: var(--azul);
+    }
+
+    .calendario__img, .clientes__img, .menu__img{
+        width: 1.75rem;
+    }
+
+    .relatorios__img{
+        width: 1.35rem;
+        margin-left: 0.1rem;
+    }
+}

@@ -1,0 +1,163 @@
+
+main{
+    margin: 0 1rem 10rem 1rem;
+}
+
+.div__dias h2{
+    color: var(--cinza-forte);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 2.625rem;
+    margin-bottom: -1rem;
+}
+
+.div__dias{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.div__cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 0.5rem;
+    width: 100%;
+    box-shadow: 3px 3px 10px rgba(20, 20, 20, 0.1);
+}
+
+.div__paciente{
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem 0.75rem 1rem;
+    border-bottom: 1px solid rgba(70, 70, 70, 0.1)
+}
+
+.paciente__foto{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 0 1rem 0 0;
+}
+
+.paciente__infos{
+    margin-right: auto;
+}
+
+.paciente__infos h3{
+    color: var(--cinza-forte);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.375rem;
+}
+
+.div__tipo-consulta{
+    display: flex;
+}
+
+.div__tipo-consulta p{
+    color: var(--cinza-fraco);
+    font-size: 0.75rem;
+    line-height: 1.1875rem;
+}
+
+.div__tipo-consulta img{
+    margin-right: 0.5rem;
+}
+
+.paciente__chat{
+    height: 2rem;
+    margin-bottom: auto;
+}
+
+.paciente__chat button{
+    border: none;
+    background: none;
+    height: 2rem;
+    width: 2rem;
+    padding: 0;
+}
+
+.div__consulta{
+    padding: 0.56rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.div__consulta h4{
+    color: var(--cinza-forte);
+    font-weight: 500;
+    line-height: 1.1875rem;
+    font-size: 0.75rem;
+}
+
+.consulta__ligar{
+    display: flex;
+    justify-content: center;
+    gap: 1.12rem;
+    height: 3rem;
+}
+
+.botao__video{
+    border: none;
+    color: #fff;
+    background: var(--laranja);
+    line-height: 1.375rem;
+    padding: 0.81rem 0.95rem;
+    box-shadow: 0px 4px 16px 0px rgba(255, 176, 80, 0.16);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.botao__audio{
+    border: 1px solid #ECECEC;
+    background: #fff;
+    line-height: 1.375rem;
+    padding: 0.81rem 0.95rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.botao__endereco{
+    border: none;
+    color: #fff;
+    line-height: 1.375rem;
+    background: var(--azul);
+    box-shadow: 0px 4px 16px 0px rgba(72, 148, 255, 0.16);
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+   .card{
+    max-width: 48.9%;
+   }
+}
+
+@media screen and (min-width: 1440px) {
+    .card{
+     max-width: 32%;
+    }
+
+    .paciente__foto{
+        width: 3rem;
+        height: 3rem;
+    }
+ }
