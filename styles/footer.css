@@ -64,6 +64,15 @@ footer span{
     position: absolute;
     align-self: flex-end;
     gap: 1rem;
+
+    animation-name: camera;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes camera{
+    0% {bottom: 4.7rem;}
+    100% {bottom: 9,2rem;}
 }
 
 .botao__pin__div{
@@ -73,6 +82,16 @@ footer span{
     position: absolute;
     align-self: flex-end;
     gap: 1rem;
+
+    animation-name: pin;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes pin{
+    0% {bottom: 4.7rem;}
+    50% {bottom: 9.2rem;}
+    100% {bottom: 13.7rem;}
 }
 
 footer span img{
@@ -81,12 +100,22 @@ footer span img{
 
 .botao__camera__div p, .botao__pin__div p{
     color: var(--cinza-forte);
-    font-size: 0.75rem;
+    font-size: 0rem;
     font-weight: 500;
-    background: #fff;
+    background: none;
     line-height: 1.2rem;
     padding: 0.125rem 0.5rem;
     border-radius: 145rem;
+
+    animation-name: texto;
+    animation-duration: 0.25s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes texto {
+   from {font-size: 0; background: none;}
+   to {font-size: 0.75rem; background: #fff;}
 }
 
 
