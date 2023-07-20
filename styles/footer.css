@@ -26,6 +26,18 @@ footer label{
     display: none;
 }
 
+footer input:checked ~ * .botao__mais{
+    animation-name: mais-pra-x;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+   
+}
+
+@keyframes mais-pra-x {
+    from {rotate: 0deg; font-size: 3rem;}
+    to {rotate: 45deg; font-size: 3rem;}
+}
+
 footer input:checked ~ .botao__camera__div{
     display: flex;  
     bottom: 9.2rem;
