@@ -30,8 +30,8 @@ footer input:checked ~ * .botao__mais{
     animation-name: mais-pra-x;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-   
 }
+
 
 @keyframes mais-pra-x {
     from {rotate: 0deg; font-size: 3rem;}
